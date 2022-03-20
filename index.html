@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum Cloning</title>
+  </head>
+  <body>
+    <div id="container">
+      <!-- header -->
+      <div id="header">
+        <!-- quote -->
+        <div id="quote">
+          <p></p>
+          <p></p>
+        </div>
+
+        <!-- 날씨 -->
+        <div id="weather">
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+
+      <div id="main">
+        <!-- 시계 -->
+        <div id="clock" class="hidden">
+          <span>00:00</span>
+        </div>
+
+        <!-- 로그인 폼 -->
+        <form class="hidden" id="login-form">
+          <input
+            required
+            maxlength="15"
+            type="text/submit"
+            placeholder="What is your name?"
+          />
+        </form>
+
+        <!-- 인사! -->
+        <div class="hidden" id="greeting"></div>
+      </div>
+
+      <div id="cfoot">
+        <!-- todo 폼 -->
+        <form id="todo-form">
+          <input type="text" placeholder="Write a To Do" required />
+        </form>
+        <!-- todo list -->
+        <ul id="todo-list"></ul>
+      </div>
+    </div>
+
+    <script src="js/login.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
